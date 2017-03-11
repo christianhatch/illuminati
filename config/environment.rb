@@ -13,4 +13,4 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'intense-dawn-47592.herokuapp.com',
   :authentication => :plain,
 }
-ActionMailer::Base.deliver_method = :smtp
+ActionMailer::Base.delivery_method = :smtp
