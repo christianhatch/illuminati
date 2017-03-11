@@ -29,6 +29,7 @@ class ContactsController < ApplicationController
    
    private 
    def contact_params
+       # Whitelist form fields to collect data from form securely
        params.require(:contact).permit(:name, :email, :comments)
    end
    
