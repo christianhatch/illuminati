@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
          
   belongs_to :plan
+  has_one :profile
   
   # If pro user passes validations, then call stripe and create customer
   attr_accessor :stripe_card_token
