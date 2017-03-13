@@ -28,10 +28,12 @@ h1, h2, h3 {
 
 //Background Gradient 
 .navbar, .home-callout {
-  //Gradient provided by @_ighosh at uiGradients.com
-  background: #00c6ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #00c6ff , #0072ff); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #00c6ff , #0072ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d61c1c+0,ea5646+100 */
+    background: #d61c1c; /* Old browsers */
+    background: -moz-linear-gradient(left,  #d61c1c 0%, #ea5646 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #d61c1c 0%,#ea5646 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #d61c1c 0%,#ea5646 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d61c1c', endColorstr='#ea5646',GradientType=1 ); /* IE6-9 */
 }
 
 //Nav 
