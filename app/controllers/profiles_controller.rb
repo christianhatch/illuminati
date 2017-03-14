@@ -6,7 +6,7 @@ class ProfilesController < ApplicationController
    end
    
    # POST to users/:user_id/profile
-   def create
+  def create
     # find the user filling out the form
     @user = User.find(params[:user_id])
     
@@ -15,13 +15,14 @@ class ProfilesController < ApplicationController
       flash[:success] = "Profile Updated!"
       redirect_to user_path(params[:user_id])
     else
+      flash[:danger] = @profile.errors.full_messages.join(", ")
       render action: :new
-   end
- end
-   
-   private 
+    end
+  end
+  
+  private 
    def profile_params 
-    params.require(:profile).permit(:first_name, :last_name, :job_title, :phone_number, :contact_email, :description)
+    params.require(:profile).permit(:first_name, :last_name, :avatar, :job_title, :phone_number, :contact_email, :description)
    end
    
 end
