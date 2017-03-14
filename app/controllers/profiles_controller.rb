@@ -13,10 +13,31 @@ class ProfilesController < ApplicationController
     @profile = @user.build_profile(profile_params)
     if @profile.save 
       flash[:success] = "Profile Updated!"
-      redirect_to user_path(params[:user_id])
+      redirect_to user_path(id: params[:user_id])
     else
       flash[:danger] = @profile.errors.full_messages.join(", ")
       render action: :new
+    end
+  end
+  
+  # GET to users/:user_id/profile/edit
+  def edit 
+    @user = User.find(params[:user_id])
+    @profile = @user.profile
+  end
+  
+  # PUT to /users/:user_id/profile
+  def update 
+    @user = User.find(params[:user_id])
+    @profile = @user.profile
+    if @profile.update_attributes(profile_params)
+      flash[:success] = "Profile Updated!"
+      
+      # Redirect user to their profile
+      redirect_to user_path(id: params[:user_id])
+    else 
+      flash[:danger] = @profile.errors.full_messages.join(", ")
+      render action: :edit
     end
   end
   
