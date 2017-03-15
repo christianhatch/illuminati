@@ -4,29 +4,29 @@
 }
 
 .well.profile-block {
-    color: #fff;
+    color: #333;
     h3 {
         margin-top: 0px;
     }
 }
 
-.well.profile-description {
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-}
+// .well.profile-description {
+//     // background-color: #5cb85c;
+//     // border-color: #4cae4c;
+// }
 
-.well.profile-contact-info {
-    background-color: #5bc0de;
-    border-color: #46b8da;
-}
+// .well.profile-contact-info {
+//     // background-color: #5bc0de;
+//     // border-color: #46b8da;
+// }
 
 .job-title-icon {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border: 2px solid #2e6da4;
+    border: 2px solid #eee;
     border-radius: 4px;
-    background-color: #337ab7;
+    background-color: #222;
     color: white;
     text-align: center;
 }
