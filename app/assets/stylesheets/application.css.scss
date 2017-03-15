@@ -20,14 +20,14 @@
 @import "font-awesome";
 
 
-//Typography 
+//Typography
 
 a, p, h1, h2, h3, h4, h5, h6, .btn, label {
     // font-family: 'Open Sans', sans-serif;
     font-family: 'Playfair Display', serif;
 }
 
-//Background Gradient 
+//Background Gradient
 .navbar {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#191919+0,000000+100 */
     background: #191919; /* Old browsers */
@@ -46,7 +46,7 @@ a, p, h1, h2, h3, h4, h5, h6, .btn, label {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333',GradientType=0 ); /* IE6-9 */
 }
 
-//Nav 
+//Nav
 .navbar {
   border: none;
 }
@@ -106,9 +106,10 @@ a, p, h1, h2, h3, h4, h5, h6, .btn, label {
     line-height: 1.5;
 }
 
-.signup-box .btn {
+/*.signup-box .btn {
     font-weight: 800;
 }
+*/
 
 //Alert styling
 .alert-notice, .alert-alert {
